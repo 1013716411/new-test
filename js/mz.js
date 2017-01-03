@@ -10,10 +10,8 @@
                 $(this).children(".two").stop(false,true).slideUp(300)
                 
             })
-        })
 
         //魅族
-        $(function(){
             var win_h =$(window).height()*0.7;
             var con1_t = $(".con1 .inner").offset().top-win_h;
             var con2_t = $(".con2 .inner").offset().top-win_h;
@@ -34,9 +32,7 @@
                         $(".con4 .inner").addClass("act")
                 }
             })
-        })
           //返回顶部
-           $(function(){
             $(window).scroll(function(){
                 if($(window).scrollTop()>100){
                     $("#top").fadeIn(1500)
@@ -51,6 +47,10 @@
                    $("body").animate({scrollTop:0},1000)
                 }
             })
-           })
+            $(".btn").click(function(){
+               $(this).find("dl").stop(false,true).slideToggle(600);
+         })
+           
+     })
        
        
