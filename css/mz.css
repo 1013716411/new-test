@@ -1,19 +1,15 @@
-*{position: 0;margin: 0;font-size: 12px; text-decoration: none; list-style: none;}
+*{position: 0;margin: 0; font-family: "Microsoft YaHei","SimSun","SimHei";font-size: 12px; text-decoration: none; list-style: none;}
 
-#header{
+.home{
+   width: 100%;
+   position: fixed;
    background: #000000;
    height: 74px;  
+   z-index: 1;
 }
-
 .nav{
     float:right;
     margin-right: 80px;
-}
-.logo{
-   float: left;
-   position: absolute;
-   top: 30px;
-   left: 50px;
 }
 .btn{
    float:right;
@@ -21,10 +17,18 @@
    top: 20px;
    right: 50px;
    text-align: center;
-   z-index: 1000;
-   border: 1px solid #ffffff;
+   display: none;
+   z-index: 2;
+}
+.btn img{
+    right: 10px;
+    cursor: pointer;
+    position: fixed;
+    border: 1px solid #ffffff;
 }
 .btn dl{
+    position: fixed;
+    right: 50px;
     width: 150px;
     background: #000000;
     display: none;
@@ -87,54 +91,27 @@
 
 
 /*魅族*/
-.con1,.con2,.con3,.con4,{
-    background:no-repeat center;
+.con1,.con2,.con3,.con4{
+   width: 100%;
+   height: 100vh;
+   background-size:100vw 100vh;
+   background-repeat: no-repeat;
 }
 .con1{
-    height:auto;
     background-image: url(../img/1.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
 }
 
 .con2{
-     height:auto;
     background-image: url(../img/2.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
 }
 .con3{
-     height:auto;
-    background-image: url(../img/3.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
+    background-image: url(../img/3.jpg);   
 }
 .con4{
-     height:auto;
-    background-image: url(../img/4.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;   
-}
-.footer{
-    height: 200px;
-    margin: 0 auto;
-    background: #cccccc;
-}
-.footer h1,.footer p{
-    text-align: center;
-}
-.footer-bar h1{
-    color: #369;
-    margin-bottom:30px;
-    font-size: 30px;
-}
-.footer-bar p{
-    color: #369;
-    margin-bottom:30px;
-    font-size: 20px;
+    background-image: url(../img/4.jpg); 
 }
 .con .inner{
-    width: 950px;
+    width:60%;
     height: 280px;
     position: relative;
     top: 30%;
@@ -142,7 +119,7 @@
 }
 .con .inner .box{
     width: 430px;
-    color: #fff;
+    color: #ffffff;
 }
 .con .inner .left{
     float: left;
@@ -161,7 +138,7 @@
 .con .inner .box h2{
     position: relative;
     top: 100px;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 100;
     line-height: 1.3em;
     transition: 0.5s;
@@ -184,13 +161,31 @@
     top: 0;
     opacity: 1;
 }
+.footer{
+    height: 180px;
+    text-align: center;
+    background: #000000;
+}
+.footer h1,.footer p{
+    color: #ffffff;
+}
+.footer-bar h1{
+    margin-bottom:30px;
+    font-size: 30px;
+}
+.footer-bar p{
+    margin-bottom:30px;
+    font-size: 20px;
+}
 #top{
+    width: 100px;
+    height: 150px;
     position: absolute;
+    display: none;
     right: 0;
 }
 
-
-@media screen and (min-width:300px) and ( max-width:600px){
+@media screen and (min-width:300px) and ( max-width:768px){
    .nav{
    display: none;
 }
@@ -204,123 +199,18 @@
     font-size: 12px;
 }
 .con .inner .box h2{
-     font-size: 20px;
-}
-.con .inner .box p{
-     font-size: 8px;
+     font-size: 25px;
 }
 #top{
    width: 20%;
-} 
-   .con1{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/1.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con2{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/2.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con3{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/3.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con4{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/4.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
 }        
 }
-@media screen and (min-width:601px) and (max-width:1000px){
-   .nav{
-   display: none;
-}
-.btn{
-    display: block;
-}
+@media screen and (min-width:768px) and (max-width:1280px){
 .con .inner .box h2{
-     font-size: 20px;
+     font-size: 25px;
 }
-.con .inner .box p{
-     font-size: 8px;
-}
-   .con1{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/1.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con2{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/2.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con3{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/3.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con4{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/4.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-} 
 }
 
-@media screen and (min-width:1001px){
-   .nav{
-    float:right;
-    margin-right: 90px;
-}
-.btn{
-    display: none;
-}
-   .con1{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/1.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con2{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/2.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con3{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/3.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-   .con4{
-    width: 100%;
-    height: 1078px;
-    background-image: url(../img/4.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-}
-}
 
 
           
